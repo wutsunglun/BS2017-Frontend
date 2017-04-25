@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>身體狀況調查問卷</title>
+</head>
+
+<body>
+    <h1>身體狀況表</h1>
+    <p>
+        性別：
+        <label><input type="radio" name="gender" value="male">男</label>
+        <label><input type="radio" name="gender" value="female">女</label>
+        <label><input type="radio" name="gender" value="unknown">未知</label>
+        <br /> 身高：
+        <input type="text" name="height" placeholder="請輸入身高(cm)" />
+        <br /> 體重：
+        <input type="text" name="weight " placeholder="請輸入體重(kg)" />
+        <br /> 年齡區間：
+        <select>
+        <option value="age">14 歲(含)以下</option>
+        <option value="age">15 ～20 歲</option>
+        <option value="age">21 ～30 歲</option>    
+        <option value="age">31 ～40 歲</option>
+        <option value="age">41 ～50 歲</option>
+        <option value="age">51 ～60 歲</option>
+        <option value="age">61 歲(含)以上</option>
+    </select>
+        <br /> 是否曾罹患下列疾病：
+        <label><input type="checkbox" name="disease" value="heart disease" />心臟病</label>
+        <label><input type="checkbox" name="disease" value="cancer" />癌症</label>
+        <label><input type="checkbox" name="disease" value="diabetes" />糖尿病</label>
+        <label><input type="checkbox" name="disease" value="asthma" />氣喘</label>
+        <label><input type="checkbox" name="disease" value="Abnormal liver function" />肝功能異常</label>
+        <div>
+            如有其他身體狀況請詳細說明：
+            <textarea placeholder="請輸入內容"></textarea>
+        </div>
+    </p>
+</body>
+
+</html>

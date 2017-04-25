@@ -1,0 +1,5 @@
+D:\Build School VS2017\Csharp\Hackathons\Hackathon02\tax\bin\Debug\tax.exe.config
+D:\Build School VS2017\Csharp\Hackathons\Hackathon02\tax\bin\Debug\tax.exe
+D:\Build School VS2017\Csharp\Hackathons\Hackathon02\tax\bin\Debug\tax.pdb
+D:\Build School VS2017\Csharp\Hackathons\Hackathon02\tax\obj\Debug\tax.exe
+D:\Build School VS2017\Csharp\Hackathons\Hackathon02\tax\obj\Debug\tax.pdb

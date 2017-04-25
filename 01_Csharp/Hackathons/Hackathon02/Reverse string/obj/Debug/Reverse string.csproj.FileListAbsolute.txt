@@ -1,0 +1,6 @@
+D:\Build School VS2017\Csharp\Hackathons\Hackathon02\reverse string\bin\Debug\reverse string.exe.config
+D:\Build School VS2017\Csharp\Hackathons\Hackathon02\reverse string\bin\Debug\reverse string.exe
+D:\Build School VS2017\Csharp\Hackathons\Hackathon02\reverse string\bin\Debug\reverse string.pdb
+D:\Build School VS2017\Csharp\Hackathons\Hackathon02\reverse string\obj\Debug\Reverse string.csprojResolveAssemblyReference.cache
+D:\Build School VS2017\Csharp\Hackathons\Hackathon02\reverse string\obj\Debug\reverse string.exe
+D:\Build School VS2017\Csharp\Hackathons\Hackathon02\reverse string\obj\Debug\reverse string.pdb

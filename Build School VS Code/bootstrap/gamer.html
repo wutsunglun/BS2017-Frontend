@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>巴哈姆特電玩資訊站</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:image" content="images/bahaLOGO_1200x630.jpg" />
+    <meta name="thumbnail" content="images/bahaLOGO_1200x630.jpg" />
+    <link rel="alternate" media="only screen and (max-width: 640px)" href="https://m.gamer.com.tw/">
+    <link rel="shortcut icon" href="images/ie9_32.ico" type="image/x-icon" />
+    <link rel="icon" href="images/gamer-favicon.ico" type="image/x-icon" />
+    <meta name="application-name" content="巴哈姆特電玩資訊站" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="images/apple-touch-icon-144x144.png" />
+    <link href="stylesheets/BH.css?v=1488533213" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/index_2k14.css?v=1487822743" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/search.css?v=1487735748" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/index_top.css?v=1482895842" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/icon.css?family=Material+Icons" rel="stylesheet">
+    <link href="stylesheets/font-awesome.css" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/bootstrap.min.css" rel="stylesheet">
+    <script src="scripts/gamer-jquery.min.js"></script>
+    <script type="text/JavaScript" src="scripts/BAHA_EGG.js?v=1478758557"></script>
+    <script type="text/JavaScript" src="scripts/movetomobile.js?v=1478758642"></script>
+    <script type="text/JavaScript" src="scripts/BH_topBar.js?v=1489383470"></script>
+    <script src="scripts/lazysizes-1.3.1.min.js?v=1478758548" async></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            if (typeof BH_AlkasooD === 'function') {
+                BH_AlkasooD($);
+            }
+        });
+        if ('1' != $.cookie.get('ckNOMOBILE')) {
+            headertomobile(navigator.userAgent || navigator.vendor || window.opera, 'http://m.gamer.com.tw');
+        }
+        if (location.href.match(/^http:\/\/gamer\.com\.tw/)) {
+            location.replace("http://www.gamer.com.tw/");
+        }
+        var BAHAID = egg.cookie.get('BAHAID');
+        var BAHAIDlow = BAHAID.toLowerCase();
+        var BAHALV = egg.cookie.get('BAHALV');
+        var BAHANICK = decodeURIComponent(escape(egg.cookie.get('BAHANICK')).replace(/\+/g, " "));
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-108920-1', 'auto');
+        if (BAHAIDlow) {
+            ga('set', 'userId', BAHAIDlow);
+        }
+        ga('send', 'pageview');
+    </script>
+    <script type="text/javascript">
+        //anti adblock
+        var AntiAd = AntiAd || {};
+        (function (AntiAd) {
+            'use strict';
+            AntiAd.flag = false;
+            AntiAd.whiteList = [];
+            AntiAd.verifyLink = function (link) {}
+            AntiAd.block = function () {}
+            AntiAd.check = function (element) {}
+        })(AntiAd);
+    </script>
+    <style>
+        .abc {
+            padding: 5px 0;
+        }
+        /*cssc abc需整理*/
+
+        .test {
+            border: solid;
+            border-color: darkgray;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 test">
+                    <a href="http://www.gamer.com.tw"><img width="156" height="107" class="BA-logo" src="images/baha_logo5.png" border="0" /></a>
+                </div>
+
+                <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 test ">
+                    <div class="row">
+
+                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 test">
+                            <div class="input-group abc">
+                                <!--cssc abc需整理-->
+                                <input type="text" class="form-control" placeholder="自訂搜尋">
+                                <span class="input-group-btn">
+                                    <a class="btn btn-default" href="#" role="button">
+                                        <span class="glyphicon glyphicon-search" aria-hidden="true"></span></a>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 test">
+
+                            <!--<ol class="breadcrumb pull-right">
+                                <li>
+                                    <a href="https://user.gamer.com.tw/login.php"><img src="images//none.gif"></a>
+                                </li>
+                                <li><a href="https://user.gamer.com.tw/login.php">我要登入</a></li>
+                                <li><a href="https://user.gamer.com.tw/regS1.php">註冊</a></li>
+                                <li>
+                                    <!--<a href="#"><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span></a>-->
+                            <!--
+
+                                    <a type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span class="caret"></span>
+                                        <span class="sr-only">Toggle Dropdown</span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <!-- Dropdown menu links -->
+                            <!--<li><a href="https://user.gamer.com.tw/login.php">我要登入</a></li>
+                                        <li><a href="https://user.gamer.com.tw/regS1.php">註冊</a></li>
+                                    </ul>-->
+
+                            <div class="breadcrumb pull-right dropdown">
+                                <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Tutorials
+    <span class="caret"></span></button>
+                                <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">HTML</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">CSS</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">JavaScript</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">About Us</a></li>
+                                    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">HTML</a></li>
+                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">CSS</a></li>
+                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">JavaScript</a></li>
+                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">About Us</a></li>
+                                    </ul>
+                                </ul>
+
+                            </div>
+
+                            </li>
+                            </ol>
+
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <form class="list-inline pull-right">
+                                <a href="https://acg.gamer.com.tw/news.php?p=android">Android</a> |
+                                <a href="https://acg.gamer.com.tw/news.php?p=ios">iOS</a> |
+                                <a href="https://acg.gamer.com.tw/news.php?p=olg">線上遊戲</a> |
+                                <a href="https://acg.gamer.com.tw/news.php?p=pc">PC單機</a> |
+                                <a href="https://acg.gamer.com.tw/news.php?p=web">WEB</a> |
+                                <a href="https://acg.gamer.com.tw/news.php?p=ps4">PS4</a> |
+                                <a href="https://acg.gamer.com.tw/news.php?p=ps3">PS3</a> |
+                                <a href="https://acg.gamer.com.tw/news.php?p=xbone">XBOne</a> |
+                                <a href="https://acg.gamer.com.tw/news.php?p=ns">NS</a> |
+                                <a href="https://acg.gamer.com.tw/news.php?p=3ds">3DS</a> |
+                                <a href="https://acg.gamer.com.tw/news.php?p=psv">PSV</a> |
+                                <a href="https://acg.gamer.com.tw/news.php?p=anime">動畫</a> |
+                                <a href="https://acg.gamer.com.tw/news.php?p=comic">漫畫</a> |
+                                <a href="https://acg.gamer.com.tw/news.php?p=novel">輕小說</a> |
+                                <a href="https://acg.gamer.com.tw/more.php" title="更多平台"><span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span></a>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

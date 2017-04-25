@@ -1,0 +1,9 @@
+D:\Build School VS2017\Csharp\Hackathons\Hackathon01\guess number\obj\Debug\Guess_number.Form1.resources
+D:\Build School VS2017\Csharp\Hackathons\Hackathon01\guess number\obj\Debug\guess_number.Properties.Resources.resources
+D:\Build School VS2017\Csharp\Hackathons\Hackathon01\guess number\obj\Debug\guess number.csproj.GenerateResource.Cache
+D:\Build School VS2017\Csharp\Hackathons\Hackathon01\guess number\bin\Debug\guess number.exe.config
+D:\Build School VS2017\Csharp\Hackathons\Hackathon01\guess number\bin\Debug\guess number.exe
+D:\Build School VS2017\Csharp\Hackathons\Hackathon01\guess number\bin\Debug\guess number.pdb
+D:\Build School VS2017\Csharp\Hackathons\Hackathon01\guess number\obj\Debug\guess number.exe
+D:\Build School VS2017\Csharp\Hackathons\Hackathon01\guess number\obj\Debug\guess number.pdb
+D:\Build School VS2017\Csharp\Hackathons\Hackathon01\guess number\obj\Debug\Guess number.csprojResolveAssemblyReference.cache

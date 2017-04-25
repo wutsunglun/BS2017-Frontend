@@ -1,0 +1,134 @@
+﻿body {
+    font-size: 15px;
+    line-height: 1.4em;
+    font-family: sans-serif;
+    color: #333;
+}
+
+a {
+    color: #009ced;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #008ad1;
+    text-decoration: underline;
+}
+
+h1.logo a {
+    display: block;
+    width: 376px;
+    height: 81px;
+    background: url('../images/pGqQJ0V.png') no-repeat;
+    white-space: nowrap;
+    text-indent: 110%;
+    overflow: hidden;
+}
+
+h2.slogan {
+    margin-top: 40px;
+}
+
+h2.slogan strong {
+    font-size: 1.5em;
+    color: #ff555d;
+}
+
+.menu-area {
+    background: #ff8086;
+    margin-bottom: 20px;
+    overflow: auto;
+}
+
+.menu-area ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-area ul li {
+    float: left;
+    width: 25%;
+}
+
+.menu-area ul li a {
+    display: block;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-area ul li a:hover {
+    background: #ff555d;
+}
+
+.headline {
+    border: #ddd 1px solid;
+    padding: 10px 10px 10px 220px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.5em;
+    position: relative;
+    min-height: 150px;
+}
+
+.headline a img {
+    position: absolute;
+    width: 200px;
+    height: 150px;
+    left: 10px;
+}
+
+.headline h4 {
+    margin-top: 0;
+    font-size: 1.5em;
+}
+
+.col-md-6 .media a img {
+    width: 120px;
+    height: 90px;
+}
+
+.more {
+    display: block;
+    text-align: right;
+}
+
+.ad img {
+    width: 220px;
+    height: 220px;
+}
+
+.side h2 {
+    padding-bottom: 4px;
+    border-bottom: #ff555d 4px solid;
+}
+
+.top-news {
+    padding-left: 30px;
+}
+
+.top-news li {
+    line-height: 1.5em;
+    padding-bottom: 5px;
+}
+
+a.back-top {
+    position: fixed;
+    bottom: 150px;
+    right: 0;
+    background: #ff8086;
+    padding: 10px 20px;
+    font-size: 2em;
+    color: #fff;
+}
+
+.footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0 40px;
+    clear: both;
+}

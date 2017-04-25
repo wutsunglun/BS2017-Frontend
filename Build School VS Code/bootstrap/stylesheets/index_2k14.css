@@ -1,0 +1,563 @@
+body{ background-image:url(https://i2.bahamut.com.tw/html_bg.gif); font-size:15px; font-family:Arial, Helvetica, sans-serif; color:#5e5e5e; line-height:100%;}
+a{ color:#5e5e5e; text-decoration:none;}
+a:hover{ color:#3e81c6; text-decoration:underline;}
+.BA-wrapper{ width:1250px; margin:0 auto;}
+
+
+/* ------------------------------------------最上層 天-------------------------------------------- */
+.BA-top{ width:1250px; height:107px; margin:0 auto; position:relative;}
+.BA-logo{ float:left; margin-left:20px; margin-right: 14px;}
+.BA-topbg{ background:url(https://i2.bahamut.com.tw/index/top_bg.jpg); background-size:100% 107px; margin-bottom:10px; border-bottom:2px solid #cccccc; min-width:1250px;}
+
+/*-----登入區塊----- */
+#BA-mydata{ border:1px solid #78c9cd; float:right; margin:4px 0 0 0; font-size:15px; line-height:18px; background-image:url(https://i2.bahamut.com.tw/index/dick.png);}
+#BA-mydata p{ padding:2px 5px 0 0; *line-height:20px;}
+#BA-mydata span{ font-size:11px; color:#959595;}
+
+#BA-mydatabtn li{ float:left; margin:0 3px; font-size:12px;}
+#BA-mydatabtn a{ background:url(https://i2.bahamut.com.tw/icon_list1.gif) no-repeat left center; padding-left:7px; color:#3d8f9b;}
+#BA-mydatabtn a:hover{ color:#FF0000;}
+#BA-mydatabtn .BA-btn_msg{ color:#FF0000;}
+#BA-mydatabtn .BA-btn_fav{ display:block; background-image:url(https://i2.bahamut.com.tw/btn_fav.gif); width:40px; height:17px; color:#5e5e5e; padding-left:5px;}
+#BA-mydatabtn .BA-btn_fav:hover{ text-decoration:none; color:#5e5e5e;}
+#BA-mydata .BA-btn_logout{ float:right; font-size:12px; text-align:center; color:#3d8f9b; display:block;}
+
+/* -----------未登入----------- */
+#BA-mydata_no{ border:1px solid #78c9cd; float:right; margin:4px 0 0 0; width:280px; line-height:18px; background-image:url(https://i2.bahamut.com.tw/index/dick.png);}
+#BA-mydata_no td{ font-size:12px;}
+#BA-mydata_no a{ color:#FF0000; text-decoration:underline; font-size:15px;}
+#BA-mydata_no #BA-login{ display:block; width:100px; height:30px; background-image:url(https://i2.bahamut.com.tw/btn_bg2.gif); color:#464646; float:right; text-decoration:none; margin:3px 5px 0 0; line-height:30px; text-align:center; font-size:15px;}
+
+/* -------------------訂閱看板區塊------------------- */
+#BA-myfav{ width:200px; border:1px solid #9a9a9a; background-color:#FFFFFF; font-size:12px; padding:10px; position:absolute; top:47px;}
+#BA-myfav a{ display:inline-block; width:185px; height:18px; line-height:18px; overflow:hidden; background:url(https://i2.bahamut.com.tw/icon_list2.gif) no-repeat left center; padding-left:8px; margin-right:5px; white-space:nowrap; color:#464646;}
+#BA-myfav a:hover{ background-color:#FFFFCC;}
+
+/*-----搜尋區----- */
+.BA-search{ float:left; margin:21px 0 0 70px; border:1px solid #FFFFFF; outline:1px solid #78c9cd; *display:inline;}
+.BA-search input{ border:1px solid #CCCCCC; padding:3px; width:300px; border-right:none; height:15px;color:#5e5e5e;}
+.BA-search a{ display:inline-block; background-image:url(https://i2.bahamut.com.tw/index/nt_barbtn.gif); width:118px; height:23px; vertical-align:top;}
+
+/*-----搜尋區下拉----- */
+/*.BA-shlist{ position:absolute; width:310px; border:1px solid #e5e5e5; background-color:#FFFFFF; position:absolute; left:245px; top:47px;}
+.BA-shlist li{ display:block; padding:0 5px; line-height:24px;}
+.BA-shlist a:hover{ background-color:#f6f6f6; text-decoration:none;}
+.ttt { background:#f6f6f6 }
+.ttt2 { background: #ffffff;}*/
+
+/*-----主選單----- */
+.BA-menu{ overflow:hidden; display:inline-block; position:absolute; right:0; bottom:8px;}
+.BA-menu li{ float:left; vertical-align:top; border-right:1px dotted #999999;}
+.BA-menu a{ display:block; padding:4px; border:1px solid transparent; margin:0 2px; font-size:13px;}
+.BA-menu a:hover{ background-color:#FFFFFF; border:1px solid #CCCCCC; text-decoration:none;}
+.BA-menu .more{ border:none;}
+.BA-menu .more a{ background:url(https://i2.bahamut.com.tw/index/icon_next.gif) no-repeat center center; width:20px; height:20px; padding:0;}
+.BA-menu .more a:hover{ background-color:#FFFFFF; border:1px solid #CCCCCC; text-decoration:none;}
+
+
+/*-----頭四條----- */
+.BA-three{ display:block; clear:both; background-image:url(https://i2.bahamut.com.tw/index/nt_topnewsbg.gif); line-height:32px; height:32px; text-align:center; font-size:15px; border:1px solid #b8b8b8; border-top:none;}
+.BA-three a{ display:inline-block; width:25%; *width:24.9%;}
+
+
+/* ------------------------------------------上方大廣告------------------------------------------- */
+.BA-billboard{ width:1250px; text-align:center; margin:0 auto 10px auto; padding:0; border:1px solid #CCC; background-image:-webkit-linear-gradient(90deg, #CCC 0%, #FFF 30%, #FFF 70%, #CCC 100%); background-image:-moz-linear-gradient(90deg, #CCC 0%, #FFF 30%, #FFF 70%, #CCC 100%); background-image:-o-linear-gradient(90deg, #CCC 0%, #FFF 30%, #FFF 70%, #CCC 100%); background-image:-ms-linear-gradient(90deg, #CCC 0%, #FFF 30%, #FFF 70%, #CCC 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cccccc', endColorstr='#ffffff',GradientType=0 );}
+.BA-billboard embed, .BA-billboard img{ outline:1px solid #CCC;}
+
+
+/* ------------------------------------------中間主內容------------------------------------------- */
+.BA-main{ overflow:auto; margin-bottom:20px;}
+
+/* ------------------------------------------中間主內容 - 左側------------------------------------------- */
+.BA-left{ width:180px; float:left; overflow:hidden;}
+
+/*-----左側服務選單----- */
+.BA-serve{ display:block; background-color:#FFFFFF; border:1px solid #CCCCCC; margin-bottom:10px; line-height:20px;}
+.BA-serve li{ border-bottom:1px dotted #e5e5e5; padding:5px 0; margin:0 5px 0 10px;}
+.BA-serve a{ display:block; letter-spacing:2px;}
+.BA-serve img{ vertical-align:middle; margin-right:10px;}
+
+/*-----區塊標題----- */
+.BA-ltitle{ display:block; background: #7CAEBA; height:27px; color:#FFFFFF; font-weight:bold; text-align: center; line-height: 27px;}
+.BA-ltitle img{ vertical-align:middle; margin-right:5px;}
+.BA-ltitle a{ color:#FFFFFF;}
+
+/*-----左側區塊內容共通----- */
+.BA-lbox{ background-color:#FFFFFF; border:1px solid #CCCCCC; line-height:140%; margin-bottom:10px;}
+
+/*-----區塊內容樣式 1：列表式----- */
+.BA-lbox1{ padding:0 10px; font-size:13px;}
+.BA-lbox1 ul{ list-style-image:url(https://i2.bahamut.com.tw/index/b_icon1.gif); padding-left:15px;}
+.BA-lbox1 li{ padding:5px 0; border-bottom:1px dotted #CCCCCC;}
+.BA-lbox1 a{ display:block;}
+
+/*-----區塊內容樣式 2：QR code----- */
+.BA-lbox2{ padding:10px; text-align:center;}
+.BA-lbox2 img{ width:60px; height:60px;}
+
+/*-----區塊內容樣式 3：圖＋文----- */
+.BA-lbox3{ border:none; background-color:transparent; padding-top: 5px;}
+.BA-lbox3 img{ width:180px;}
+.BA-lbox3 a:nth-child(even){ display:block; width:178px; margin:0 auto 10px auto; text-align:center; outline:none; color:#3e81c6; background-color:#FFF; border:1px solid #CCC; border-radius:0 0 5px 5px; padding:3px 0; border-top:0; font-size:13px;}
+.BA-lbox3 p{ padding:5px 0 0 0; border-top:1px dotted #CCCCCC; text-align:center; margin-top:5px;}
+.BA-lbox3 a+span{ margin-top:10px; display:block;}
+.BA-lbox3 span>a{ width:90%; text-align:left; padding:3px 0 3px 15px; background:url(https://i2.bahamut.com.tw/index/b_icon1.gif) no-repeat left 3px; border-top:1px dotted #CCCCCC;}
+
+.newanime_img{width: 180px;height: 132px;overflow:hidden;position: relative;display: block;}
+.newanime_img img{position: absolute;top:-24px;left:0;}
+.newanime_text span{display:inline-block;width: 180px;height:22px;overflow: hidden;}
+
+/*-----區塊內容樣式 4：文字＋選項----- */
+.BA-lbox4{ padding:10px;}
+.BA-lbox4 p{ color:#009ea0; margin-bottom:5px; background-color:#f6f6f6; padding:5px; border-radius:5px; border-left:1px solid #e5e5e5; border-top:1px solid #e5e5e5;}
+.BA-lbox4 li{ padding:3px 0;}
+.BA-lbox4 input{ vertical-align:middle; margin-right:3px;}
+.BA-lbox4 span{ display:block; text-align:center; padding-top:5px; border-top:1px dotted #CCCCCC; margin-top:5px;}
+.BA-lbox4 button{ line-height:18px; padding:0 10px; margin:0 5px;}
+
+/*-----區塊內容樣式 5：電競王區塊----- */
+.BA-lbox5{ padding:10px;}
+.BA-lbox5 ul{}
+.BA-lbox5 li{ padding:3px 0; border-bottom:1px dotted #CCCCCC;}
+.BA-lbox5 a{ display:block;}
+.BA-lbox5 i{ display:block; width:18px; height:18px; background-color:#79afd4; color:#FFFFFF; float:left; text-align:center; line-height:18px; font-style:normal; margin-right:5px; border-radius:20px; box-shadow:inset 1px 1px 2px rgba(0,0,0,0.3);}
+.BA-lbox5 li:first-child{ display:block; text-align:center; color:#FFFFFF; font-weight:bold; border-bottom:none; border-radius:5px; box-shadow:inset 1px 1px 2px rgba(0,0,0,0.3);}
+.BA-lbox5 .listA li:first-child{ background-color:#eb6877;}
+.BA-lbox5 .listA i{ background-color:#eb6877;}
+.BA-lbox5 .listB{ margin-top:10px;}
+.BA-lbox5 .listB li:first-child{ background-color:#009ed5;}
+.BA-lbox5 .listB i{ background-color:#009ed5;}
+.BA-lbox5 .listC{ margin-top:10px;}
+.BA-lbox5 .listC li:first-child{ background-color:#ff0000;}
+.BA-lbox5 .listC i{ background-color:#ff0000;}
+
+.esrtag a{ padding:0 13px; margin-top:2px;}/*左側區塊電競王使用 */
+
+/*----- 區塊內容樣式 6：列表式-2 ----- */
+.BA-lbox6{ padding:0 10px; font-size:13px;}
+.BA-lbox6 ul{}
+.BA-lbox6 li{ padding:5px; border-bottom:1px dotted #CCCCCC;}
+.BA-lbox6 a{ display:block; white-space: nowrap; overflow: hidden; text-align: center; color: #999;}
+.BA-lbox6 span{ display: block; color: #0061c7;}
+
+/*----- 新番動畫列表 ----- */
+.BA-newanime {}
+.BA-newanime ul li { margin-top: 8px; margin-right: 6px; margin-left: 6px; padding-bottom: 8px; font-size: 13px; border-bottom: 1px dotted #CCC; }
+.BA-newanime ul li:last-child { border: 0; }
+.BA-newanime ul li .newanime_name { display: inline-block; vertical-align: middle; max-width: 116px; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; color: #0061c7; }
+.BA-newanime ul li .newanime_name:hover { text-decoration: underline; }
+.BA-newanime ul li .newanime_vol { display: inline-block; vertical-align: middle; font-size: 12px; color: #999; }
+.BA-newanime ul li .newanime_dateweek { float: right; padding: 2px 0px; font-size: 12px; color: #999; }
+
+/* ------------------------------------------中間主內容 - 中間------------------------------------------- */
+.BA-center{ width:750px; float:left; margin:0 10px; overflow:hidden;}
+.BA-cboxAD{ margin-bottom:10px;}
+
+/* -----電玩瘋直播----- */
+.BA-center>iframe{}
+.BA-czbtn{ padding: 5px; clear: both; overflow: hidden; background-color: rgba(0,0,0,.8); margin-bottom: 10px;}
+.BA-czbtn a{ display: block; float: right; line-height: 1.8; padding: 0 10px; font-size: 13px; background-color: #3e81c6; color: #FFF; border: 1px solid #336699; text-shadow: 1px 1px 0 #336699;}
+.BA-czbtn a:hover{ background-color: #336699; text-decoration: none;}
+.BA-czbtn i{ vertical-align: middle; margin-right: 5px; font-size: 15px;}
+
+/*-----超級看板----- */
+.BA-cbox1{ background-image:url(https://i2.bahamut.com.tw/index/iSuperbg.jpg); width:600px; height:167px; margin-bottom:10px; text-align:center; padding-top:7px;}
+
+/*-----中間區塊內容共通----- */
+.BA-cbox{ border:1px solid #CCCCCC; margin-bottom:10px; background-color:#FFFFFF;}
+
+/*-----中間區塊 TAGS 樣式----- */
+.BA-ctag1{ margin-bottom:-1px; z-index:10; overflow:auto;}
+.BA-ctag1 li{ float:left; margin-right:2px;}
+.BA-ctag1 a{ display:inline-block; background-image:url(https://i2.bahamut.com.tw/gnn/no2.jpg); border:1px solid #CCCCCC; line-height:23px; height:23px; padding:0 9px; text-align:center; min-width:40px;}
+.BA-ctag1 a:hover{ background-image:url(https://i2.bahamut.com.tw/gnn/now2.jpg); color:#147e96; border-color:#c3c3c3; text-decoration:none; border-bottom-color:#FFFFFF;}
+.BA-ctag1 img{ margin-right:5px; vertical-align:middle;}
+.BA-ctag1 .BA-ctag1now{ border-color:#c3c3c3; background-image:url(https://i2.bahamut.com.tw/gnn/now2.jpg); color:#147e96; font-weight:bold; border-bottom-color:#FFFFFF;}
+.BA-ctag1 .show{ background-image:none; background-color:#FFF; background-image:linear-gradient(180deg, #FFF 0%, #FFF 30%, #f29c9f 100%);}
+
+/*-----GNN 頭四條----- */
+.BA-cbox2{ overflow:hidden; padding-left:1px; margin-bottom:0px; border-bottom:0px; }
+.BA-cbox2 div{ float:left; width:178px; padding:0 4px; text-align:left; margin:7px 0;line-height:1.3; }
+.BA-cbox2 img{ display:block; margin:0 auto; margin-bottom:5px; width:180px; height:180px;}
+.BA-cbox2 a{ display:block; font-size:13px;line-height: 18px;}
+.BA-cbox2 span{ display:block; text-align:center; width:120px; color:#5e5e5e; margin:0 auto 7px auto;}
+.BA-cbox2 iframe{ margin:10px;}
+
+
+/*-----GNN 列表新聞----- */
+.BA-cbox3{ padding:10px 10px 5px 10px;}
+.BA-cbox3 p{ border-bottom:1px dotted #CCCCCC; color:#5e5e5e; padding:6px 0; display: inline-block; width:725px;}
+.BA-cbox3 span{ display:inline-block; width:46px; margin-right:5px; line-height:18px; text-align:center; background-color:#e6f1f6; color:#446ba2; font-family:Arial, Helvetica, sans-serif; -webkit-text-size-adjust:none; font-size:13px;}
+.BA-cbox3 img{ vertical-align:middle; margin-left:5px;}
+.BA-cbox3 div{ text-align:right; border-bottom:none; padding-top:5px; line-height:140%;}
+.BA-cbox3 div a{ color:#3e81c6; margin-left:15px;}
+
+/*-----小屋區塊+公會----- */
+.BA-cbox4{ padding-bottom:5px;}
+.BA-cbox4A{ width:360px; padding:10px 0 0 10px; display:inline-block; vertical-align:top; *display:inline; zoom:1;}
+.BA-cbox4A div{ float:left; width:180px; text-align:center; height:180px; background-color:#e5e5e5; vertical-align:middle; position:relative;}
+.BA-cbox4A img{ position:absolute; left:0; top:0; right:0; bottom:0; margin:auto; max-width:180px; max-height:180px;}
+.BA-cbox4A p{ margin-left:185px; line-height:24px; word-break:break-all; word-wrap:break-word;}
+.BA-cbox4 .BA-cbox4B{ text-align:right; border-top:1px solid #e5e5e5; padding:5px 0 0 0; margin:10px 10px 0 10px; line-height:140%;}
+.BA-cbox4B a{ color:#3e81c6;}
+.BA-cbox4C{ font-weight:bold; display:block; padding:3px 0; border-bottom:1px dotted #CCCCCC; margin-bottom:5px; color:#3e81c6;}
+
+/*-----小屋區塊----- */
+.BA-cbox10{ padding-bottom:5px; overflow: hidden; margin-bottom: 0; border-bottom: 0;}
+.BA-cbox10 div{ width: 180px; float: left; margin: 5px 0 0 5px; font-size: 13px;}
+.BA-cbox10 div a:first-of-type{ display: block; width: 180px; height: 180px; position: relative; background-color: #e5e5e5; margin-bottom: 3px;}
+.BA-cbox10 a+a{ display: block; height: 35px; overflow: hidden;line-height: 18px;margin: 7px 0;}
+.BA-cbox10 img{ max-width: 180px; max-height: 180px; position: absolute; left: 0; right: 0; bottom: 0; top: 0; margin: auto;}
+
+.BA-cbox10B{ text-align:right; border:1px solid #ccc; border-top-color: transparent; padding:5px 10px; line-height:140%; clear: both; background-color: #fff; margin-bottom: 10px;}
+.BA-cbox10B:before{ content: ""; display: block; height: 1px; background-color: #e5e5e5; margin-top: -10px; margin-bottom: 5px;}
+.BA-cbox10B a{ color: #3e81c6;}
+
+/*-----公會區塊----- */
+.BA-cbox8{ padding:11px 10px 5px 10px;}
+.BA-cbox8 table{ width:49%;}
+.BA-cbox8 td{ padding:5px 5px 5px 0; border-bottom:1px dotted #e5e5e5; line-height:140%;}
+.BA-cbox8 span{ display:block; width:20px; height:20px; background-color:#79afd4; color:#FFFFFF; float:left; text-align:center; line-height:20px;}
+.BA-cbox8A{ text-align:right; padding:5px 0 0 0; margin:10px 0 0 10px; line-height:140%; clear:both;min-height:21px;}
+.BA-cbox8A a{ color:#3e81c6;}
+
+/*-----熱門看板----- */
+.BA-cbox5 {
+  position: relative;
+  padding: 10px 10px 5px 10px;
+}
+
+.BA-cbox5 table {
+  width: 49%;
+}
+
+.BA-cbox5 tr:first-child {
+  background-color: #f6f6f6;
+}
+
+.BA-cbox5 td {
+  padding: 7px 5px 7px 0;
+  border-bottom: 1px dotted #e5e5e5;
+  line-height: 140%;
+}
+
+.BA-cbox5 span {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: #79afd4;
+  color: #FFFFFF;
+  float: left;
+  text-align: center;
+  line-height: 20px;
+  font-size: 13px;
+}
+
+.BA-cbox5A {
+  padding-bottom: 10px;
+}
+
+.BA-cbox5A a {
+  margin: 0 8px;
+  font-weight: bold;
+}
+
+.BA-cbox5B {
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+  width: 260px;
+}
+
+.BA-cbox5B a+a {
+  margin-left: 5px;
+}
+
+.BA-cbox5C {
+  text-align: right;
+  padding-top: 5px;
+  clear: both;
+  line-height: 140%;
+}
+
+.BA-cbox5C a {
+  color: #3e81c6;
+}
+
+.pop-update.pop-update {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  display: inline-block;
+  float: none;
+  width: inherit;
+  height: inherit;
+  background-color: transparent;
+  color: #cccccc;
+  font-size: 12px;
+  line-height: 1;
+}
+
+/*-----熱門看板-免費看與直接玩----- */
+.BA-freewatch{display:inline-block;font-size:12px;border: 1px #2a7d97 solid;color:#2a7d97 ;padding: 0 2px;height: 19px;line-height: 19px;margin-left: 5px;
+    vertical-align: text-bottom;}
+.BA-freewatch:hover{background: #2a7d97;color:#fff;text-decoration:none;}
+/*-----熱門手遊----- */
+.BA-hotmobile span{background-color: transparent;color:#189696;font-size:15px;}
+.BA-hotmobile .game{width: 200px;padding-left: 5px;white-space: nowrap;overflow: hidden;display: block;}
+.BA-hotmobile .pic{float: left;width: 40px;height: 40px;position: relative;}
+.BA-hotmobile .pic img{display: block;position: absolute;left: 0;right: 0;top: 0;bottom: 0;margin: auto;max-width: 40px;max-height: 40px;}
+.BA-hotmobile .clearfloat{height: 0px;}
+.BA-hotmobile .go_fourm{padding: 4px 4px;border: 1px solid #A6C3DA;color: #A6C3DA;font-size: 12px;border-radius: 4px;text-decoration: none;}
+.BA-hotmobile .go_fourm:hover{background: #3e81c6;color:#fff;}
+
+.BA-mobilegamechart tr:first-child{ background-color:#fff;}
+.BA-mobilegamechart .game{width: 165px; padding-left: 5px; white-space: nowrap; overflow: hidden; display: inline-block; vertical-align: middle; margin-right: 8px;}
+.BA-mobilegamechart .game-data { display: inline-block; width: 60px; vertical-align: middle; color: #189696; float: right;}
+.BA-mobilegamechart .install{width: 155px; padding-left: 5px; white-space: nowrap; overflow: hidden; display: inline-block; vertical-align: middle; margin-right: 5px;}
+.BA-mobilegamechart .install-data { display: inline-block; width: 70px; vertical-align: middle; color: #189696; float: right;}
+.BA-mobilegamechart .pic{float: left;width: 40px;height: 40px;position: relative;}
+.BA-mobilegamechart .pic img{display: block;position: absolute;left: 0;right: 0;top: 0;bottom: 0;margin: auto;max-width: 40px;max-height: 40px;}
+.BA-mobilegamechart .clearfloat{height: 0px;}
+.BA-mobilegamechart .go-forum{padding: 4px 4px;border: 1px solid #A6C3DA;color: #A6C3DA;font-size: 13px;border-radius: 4px;text-decoration: none;}
+.BA-mobilegamechart .go-forum:hover{background: #3e81c6;color:#fff;}
+.growth:hover { text-decoration: none;}
+.hotgame:hover { text-decoration: none;}
+
+/*-----近期發售情報----- */
+.BA-cbox6{ padding:10px 10px 5px 10px;}
+.BA-cbox6A{ width:540px; height:229px;}
+.BA-cbox6A cite{ white-space:nowrap; overflow:hidden; display:inline-block; width:265px; line-height:18px; vertical-align:bottom;}
+.BA-cbox6A span{ display:inline-block; text-align:center;}
+.BA-cbox6A p{ padding:5px 0; border-bottom:1px dotted #CCCCCC; margin-right:3px;}
+.BA-cbox6A p:hover{ background-color:#f6f6f6;}
+.BA-cbox6A a{ white-space:nowrap; max-width:380px; display:inline-block; overflow:hidden;}
+
+.BA-cbox6B{ text-align:center; width:190px; background-color:#F6F6F6;}
+.BA-cbox6B img{ display:block; max-width:180px; max-height:180px; position: absolute; left: 0; top: 0; right: 0; bottom: 0; margin: auto;}
+.BA-cbox6B a{ display:block; margin:10px 10px 5px 10px; width:180px; height:180px; position: relative;}
+
+.BA-cbox6C{ width:40px; float:right; padding:5px 0 3px 0;}
+.BA-cbox6D{ width:45px; margin:0 7px 0 0; padding:5px 0 3px 0;}
+.BA-cbox6E{ background-color:#e6f1f6; color:#446ba2; line-height:18px; width:50px; margin:0 7px 0 0; -webkit-text-size-adjust:none; font-size:13px;}
+.BA-cbox6F{ text-align:right; padding-top:5px; line-height:140%;}
+.BA-cbox6F a{ margin-right:10px; color:#3e81c6;}
+
+/*-----熱門話題----- */
+.BA-cbox7{ padding:10px 10px 5px 10px; line-height:140%;}
+.BA-cbox7 table{ width:100%;}
+.BA-cbox7 tr:first-child{ background-color:#f6f6f6;}
+.BA-cbox7 td{ border-bottom:1px dotted #e5e5e5; padding:5px;}
+.BA-cbox7 span{ color:#189696;}
+.BA-cbox7 td>a{ display:block; width:500px; white-space:nowrap; overflow:hidden;}
+.BA-cbox7 td[width]>a{ display:block; width:125px; white-space:nowrap; overflow:hidden;}
+.BA-cbox7 p{ text-align:right; padding-top:5px;}
+.BA-cbox7 p>a{ color:#3e81c6;}
+
+/*----- 實況宣傳 ----- */
+.BA-cbox9A{ overflow: hidden; padding-left:1px; margin-bottom:0px; border-bottom:0px;}
+.BA-cbox9A div{ float: left; padding:0 4px; text-align:left; margin:5px 0; line-height:1.3; width: 240px;}
+.BA-cbox9A div a{ display:block; font-size:13px;}
+.BA-cbox9A div a:first-of-type{ width: 240px; height: 129px; background-color: #e5e5e5; margin-bottom: 3px; overflow: hidden;}
+.BA-cbox9A div a+a{ height: 32px; overflow: hidden;padding: 3px 0 5px 0;line-height: 18px;}
+.BA-cbox9A img{ display:block; width: 240px;}
+.BA-cbox9A span{ display:block; text-align:center; color:#5e5e5e;margin: 2px auto 7px auto;}
+
+.BA-cbox9B{ overflow:hidden; padding-left:1px; margin-bottom:0px; border-bottom:0px; }
+.BA-cbox9B div{ float:left; width:178px; padding:0 4px; text-align:left; margin:5px 0;line-height:1.3; }
+.BA-cbox9B div a{ display:block; font-size:13px;}
+.BA-cbox9B div a:first-of-type{ width: 180px; height: 180px; background-color: #e5e5e5; position: relative; margin-bottom: 3px;}
+.BA-cbox9B div a+a{ height: 32px; overflow: hidden;}
+.BA-cbox9B img{ display:block; max-width:180px; max-height:180px; position: absolute; right: 0; bottom: 0; left: 0; top: 0; margin: auto;}
+.BA-cbox9B span{ display:block; text-align:center; color:#5e5e5e;}
+
+.BA-cbox9C{ text-align:right; border:1px solid #ccc; border-top-color: transparent; padding:5px 10px; line-height:140%; clear: both; background-color: #fff; margin-bottom: 10px;}
+.BA-cbox9C:before{ content: ""; display: block; height: 1px; background-color: #e5e5e5; margin-top: -10px; margin-bottom: 5px;}
+.BA-cbox9C a{ color: #3e81c6;}
+
+.live_film img{ border-top: 5px #f19149 solid;}
+.live_film span{ color:#f19149; font-weight:bold;}
+.live_film a{ color: #b05715;}
+
+/* ------------------------------------------中間主內容 - 右側------------------------------------------- */
+.BA-right{ width:300px; float:left; text-align:center;}
+.BA-right div{ background-color:#ccc; margin-bottom:10px;}
+.BA-right p{ margin-bottom:5px;}
+.BA-right br+img, .BA-right br+img{ display:none;}
+
+/*-----會員好料特區----- */
+.BA-right .BA-rbox1{ padding:5px 10px; background-color:#fff;}
+.BA-rbox1 a{ display:block; padding:5px 0; border-bottom:1px dotted #CCCCCC; }
+
+/*-----勇者狩獵村----- */
+.BA-rbox2{ display:block; width:200px; height:74px; margin:0 auto;}
+
+/* ------------------------------------------下方版權宣告------------------------------------------- */
+.BA-footer{ text-align:center; padding:10px 0; border-top:1px solid #CCCCCC; line-height:180%; clear:both; font-size: 13px;}
+.BA-footer a{ margin:0 5px;}
+
+
+/*-----搜尋BAR----- */
+.TOP-search input{ width:360px; margin-left:14px;}
+
+/*-----下拉選單----- */
+.TOP-msg{ line-height:18px;}
+
+/*-----20160802_首頁精選文章瀑布流----- */
+#rivers {width:750px;max-width:750px;}
+#rivers figure { background: #fff; border: 1px solid #ccc; margin: 0 0 15px; padding-bottom: 10px; display: inline-block; border-radius: 4px; width: 100%;box-sizing: border-box;}
+#rivers figure a { word-break: break-all;} 
+#rivers figure img { width: 100%; height: auto; min-width: 237px;}
+#rivers figure figcaption { padding: 0 10px; font-size: 15px; line-height: 1.5; margin-top: 12px;}
+#rivers figure figcaption span { display: inline-block; vertical-align: middle; margin-right: 10px; max-width: 110px; overflow: hidden; white-space: nowrap;}
+#rivers figure figcaption p { display: block; font-size: .8rem; color: #ccc; vertical-align: middle;}
+.img_box { max-height: 350px; overflow: hidden;}
+
+/*-----20160829_左側版權宣告區塊----- */
+.BA-lbox-copyright { text-align: center;}
+.BA-lbox-copyright li { padding: 5px 0; font-size: 13px; line-height: 20px;}
+.BA-lbox-copyright li:nth-child(1) { letter-spacing: 0.1em;}
+.BA-lbox-copyright li:nth-child(2) { font-size: 12px;}
+.BA-lbox-copyright li a { color: #5e5e5e; text-decoration: none;}
+.BA-lbox-copyright li a:hover { text-decoration: underline;}
+.BA-lbox-copyright li p { letter-spacing: 0.15em;}
+.BA-lbox-copyright li:last-child { font-size: 12px;}
+
+
+/*--20160920_左側上市表：頁籤--*/
+.launch-nav { display: block;
+    margin: 5px 0 -1px 0;
+}
+.launch-nav ul {
+  padding: 0;
+  font-size: 0;
+}
+.launch-nav li {
+  display: inline-block;
+  list-style: none;
+  vertical-align: middle;
+  text-align: center;
+  border: 1px #ccc solid;
+  background: #f6f6f6;
+  color: #5e5e5e;
+}
+.launch-nav li>a { 
+  display: inline-block;
+  font-size: 13px;
+  width: 43px;
+  height: 24px;
+  line-height: 24px;
+  text-decoration: none;
+}
+.launch-nav li>a:hover { 
+  border-color: #ccc;
+  border-bottom-color: #fff;
+  font-weight: bold;
+  color: #147eaf;
+  background: #fff;
+}
+.launch-nav .launch-now {
+  border-color: #ccc;
+  border-bottom-color: #fff;
+  font-weight: bold;
+  background: #fff;
+}
+.launch-now a { color: #147eaf;}
+
+/*--20160920_左側上市表：主內容--*/
+.launch-box {padding: 11px 5px 0 5px;}
+.launch-box li { padding-bottom: 3px;
+    margin-bottom: 6px;
+    border-bottom: 1px #eaeaea dotted;
+    vertical-align: top;
+    line-height: 18px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.launch-box li:last-child { margin-bottom: 0;}
+.launch-box li span { color: #999;
+    display: inline-block;
+    width: 30px;
+    height: 16px;
+    font-size: 12px;
+    text-align: center;
+    border: 1px #d6d6d6 solid;
+    vertical-align: top;
+}
+.launch-box li a { display: inline-block;
+    margin-left: 5px;
+    max-height: 18px;
+    font-size: 13px;
+    color: #0061c7;
+    white-space: pre-line;
+    overflow: hidden;
+    word-break: break-all;
+}
+.launch-box li i { color: #999;
+    display: inline-block;
+    height: 18px;
+    font-size: 12px;
+    text-align: right;
+    font-style: normal;
+    vertical-align: top;
+}
+.launch-box li a.launch-short {
+    width: 101px;
+}
+/*--20160920_左側上市表：TV區塊內容--*/
+.launch-TV li span { color: #999;
+    display: inline-block;
+    width: 38px;
+    height: 16px;
+    font-size: 12px;
+    text-align: center;
+    border: 1px #d6d6d6 solid;
+    vertical-align: top;
+}
+.launch-box li a.launch-short-TV {
+    width: 93px;
+}
+
+/*--20160920_左側上市表：動畫區塊內容--*/
+.launch-anime li a { display: inline-block;
+    margin: 0 2px;
+    width: 122px;
+    max-height: 18px;
+    font-size: 13px;
+    color: #0061c7;
+    white-space: pre-line;
+    overflow: hidden;
+}
+.launch-anime li a.launch-longer-anime { 
+    width: 100%;
+}
+
+.launch-anime a.freewatch {
+    display: inline-block;
+    border: 1px #2a7d97 solid;
+    background: #fff;
+    color: #2a7d97;
+    width: 38px;
+    height: 16px;
+    font-size: 12px;
+    text-align: center;
+    vertical-align: top;
+    margin-left: 0;
+}
+.launch-anime a.freewatch:hover {
+    background: #2a7d97;
+    color: #fff;
+    text-decoration: none;
+}
+
+.launch-anime li i{
+     color: #999;
+    display: inline-block;
+    width: 40px;
+    height: 22px;
+    line-height: 22px;
+    font-size: 12px;
+    text-align: right;
+    font-style: normal;
+    vertical-align: top;
+}

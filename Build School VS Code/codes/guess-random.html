@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <pre><script>
+
+        
+        var num =Math.floor ( Math.random() * 10),
+        play =true,
+        guess="";
+
+        while(play){
+            guess = prompt("請猜答是多少?",guess);       
+            
+            if(guess==num){
+                 document.writeln("猜對了!答案就是"+num);
+                play=false;               
+            }
+        }
+
+        </script></pre>
+</body>
+
+</html>

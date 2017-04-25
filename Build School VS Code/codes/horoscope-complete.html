@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <!--<link rel="icon" href="../../favicon.ico">-->
+
+  <title>Guess number</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="stylesheets/bootstrap.min.css" rel="stylesheet">
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <!--<link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">-->
+
+  <!-- Custom styles for this template -->
+  <link href="stylesheets/dashboard.css" rel="stylesheet">
+
+  <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+  <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+  <!--<script src="../../assets/js/ie-emulation-modes-warning.js"></script>-->
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+          aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        <a class="navbar-brand" href="#">Project name</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Dashboard</a></li>
+          <li><a href="#">Settings</a></li>
+          <li><a href="#">Profile</a></li>
+          <li><a href="#">Help</a></li>
+        </ul>
+        <form class="navbar-form navbar-right">
+          <input type="text" class="form-control" placeholder="Search...">
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-3 col-md-2 sidebar">
+        <ul class="nav nav-sidebar">
+          <li class="active"><a href="#">Overview <span class="sr-only">(current)</span></a></li>
+          <li><a href="#">Reports</a></li>
+          <li><a href="#">Analytics</a></li>
+          <li><a href="#">Export</a></li>
+        </ul>
+        <ul class="nav nav-sidebar">
+          <li><a href="">Nav item</a></li>
+          <li><a href="">Nav item again</a></li>
+          <li><a href="">One more nav</a></li>
+          <li><a href="">Another nav item</a></li>
+          <li><a href="">More navigation</a></li>
+        </ul>
+        <ul class="nav nav-sidebar">
+          <li><a href="">Nav item again</a></li>
+          <li><a href="">One more nav</a></li>
+          <li><a href="">Another nav item</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="btn-group btn-group-justified">
+                <h1>生命靈數</h1>
+
+                <div class="input-group">
+                  <span class="input-group-addon">出生年月日：</span>
+                  <input id="birthdate" type="date" name="birthdate" class="form-control" placeholder="2014-09-18" required="required">
+                  <span class="input-group-btn">
+                    <a id="numerology" type="button" class="btn btn-default" onclick=" doAnalysis();">分析</a>
+                  </span>
+                </div>
+
+                <ul id="results" class="list-group">
+                  <!--
+                  <li class="list-group-item">
+                    <span class="label label-danger">0A1B</span>
+                    1234
+                  </li>
+                  -->
+                </ul>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!--<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>-->
+  <script src="scripts/bootstrap.min.js"></script>
+  <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+  <!--<script src="../../assets/js/vendor/holder.min.js"></script>-->
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <!--<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>-->
+  <script>
+    var horoscopeData = {
+      "aquarius": {
+        "name": "水瓶座",
+        "lookup": [
+          "你是瓶子座中最自閉的，有時候會顯得太過我行我素了些。",
+          "你會比較受到別人的影響，但還不會失去自己原本的主張。",
+          "你是一隻多才多藝的瓶子哩！尤其擅長於表達與溝通哦！",
+          "你是瓶子中比較穩定的，會習慣維持某一種生活的方式。",
+          "常常讓人找不到的就是你這種瓶子啦！朋友也是多不勝數。",
+          "你是比較重感情的瓶子，也比較桃花，感情問題會比較多。",
+          "你是瓶子中最為理性的，太過聰明的話有時候會不近人情。",
+          "你是瓶子中比較重視物質的，會去追求自己所想要的生活。",
+          "你的理想非常高遠，如果持續努力，成功的機會是很大的。"
+        ]
+      },
+      "pisces": {
+        "name": "雙魚座",
+        "lookup": [
+          "你容易沉溺在自己的世界的，忘掉了身邊還有別人存在。",
+          "你很容易受到別人的引導，而忘記了自己原本的方向哦！",
+          "你是天生的藝術家，不過還是要稍為注意一下現實環境。",
+          "你是追求穩定生活的魚座，不喜歡太過混亂的生活。",
+          "你比較沒有目標，幾乎什麼事都會去做做看，但都維持不久。",
+          "感情是你最煩惱的事，常常因此而受到打擊或挫折。",
+          "你想得很多，但是一旦遇到自己的事情就會比較主觀。",
+          "你是喜歡享受的魚座，對於生活上的小事都非常的注意。",
+          "你對於某些事都抱著很大的熱誠，過度的話會顯得特別偏執。"
+        ]
+      },
+      "aries": {
+        "name": "牡羊座",
+        "lookup": [
+          "你是個主觀很強的人，只想著自己想做的事。",
+          "你會在意別人看你的眼光，個性比較害羞一點。",
+          "喜歡錶達自己的想法，但也要多聽聽別人的意見哦！",
+          "你對未來很關心，很少胡思亂想，會腳踏實地的努力。",
+          "最愛玩的Aries牧羊非你莫屬，尤其喜歡到處去湊熱鬧。",
+          "你很固執哦！尤其是感情層面，而且非常的主觀。",
+          "對於自己覺得有理的地方非常的堅持，不聽別人的意見。",
+          "很重視實際層面的成就，會很努力在學習和工作上。",
+          "你是較不切實際的人，不過你的熱情可將不可能變可能。"
+        ]
+      },
+      "taurus": {
+        "name": "金牛座",
+        "lookup": [
+          "你的行動力很強，對事自有一套，做法也不喜歡受干涉。",
+          "你會重視人際關係，在與別人相處時也比較容易受影響。",
+          "你是牛座中比較靈活的，喜歡發表自己所研究出來的事物。",
+          "你是牛座中最固執的哦！你的想法常常和別人不太一樣。",
+          "你是一隻多才多藝的牛，如果能夠定下來會更有成就。",
+          "你是最念舊的牛座，對於自己重視的東西會非常呵護。",
+          "你是有叛逆性格的牛牛，不易被別人說服，自有一套想法。",
+          "你很重視實際層面的成就，會努力讓自己更加的優秀或成功。",
+          "你是牛座中最有夢想的，但是要多學習如何落實在現實中。"
+        ]
+      },
+      "gemini": {
+        "name": "雙子座",
+        "lookup": [
+          "喜歡自由自在的你，對於自己有興趣的事情都會去鑽研哦！",
+          "你是最喜歡與別人溝通的Gemini雙子座，不過很容易受外來的影響。",
+          "你真的是Gemini雙子座中最為多才多藝的，什麼東西都是一學就會。",
+          "你是比較重視生活規律的人，看來隨和但自有一套規則。",
+          "喜歡到處亂跑的你真是交友滿天下，心性上也比較不穩定。",
+          "你是Gemini雙子中最重視人情味的，尤其重視老朋友之間的感情。",
+          "你是Gemini雙子中最刁鑽古怪的，常想些別人都不會想到的問題。",
+          "你喜歡享受生活，會特別的注重自己的生活品質。",
+          "你是Gemini雙子中最會胡思亂想的，同時也是比較熱情的。"
+        ]
+      },
+      "cancer": {
+        "name": "巨蟹座",
+        "lookup": [
+          "你個性上有點自閉哦！不容易真正和別人有好的交流。",
+          "會很看重別人的意見，要小心因此喪失自己的意見。",
+          "喜歡感情上的表達與溝通，在藝術上會有不錯的天份哩！",
+          "你是蟹子中比較龜毛的，尤其重視自己生活上的規律。",
+          "你不一定喜歡亂跑，但不能受到太多拘束，想自由自在。",
+          "你是蟹座中最重感情的，尤其在感情世界里很要求完美。",
+          "你是蟹子中想得最多的，表現出來的模樣也頗為固執己見。",
+          "你很重視現實上的成就與穩定，會努力讓自己的生活更好。",
+          "你是蟹子中相當熱情的，但剛到新的環境會比較害羞。"
+        ]
+      },
+      "leo": {
+        "name": "獅子座",
+        "lookup": [
+          "你是Leo獅子座中最為自我的，但可能因此造成人際問題。",
+          "別人的肯定對你來說非常重要，可能因此而失去自我。",
+          "你是Leo獅子座中最愛表現自己的，通常是人際關係中的佼佼者。",
+          "你是只固執的Leo獅子，而且在行動上比較缺乏冒險犯難的精神。",
+          "Leo獅子中最熱愛自由的就是你啦！一般來說你們是相當大方的。",
+          "你是Leo獅子座中比較龜毛的，尤其是感情的表達上會顯得害羞。",
+          "你是很會想的Leo獅子座哦！雖然比較主觀，但還可以溝通。",
+          "你是一個講究生活品味的人哦！喜歡從容優渥的過日子。",
+          "你的熱情很容易感動別人，在人群中常是人氣很旺的明星哩！"
+        ]
+      },
+      "virgo": {
+        "name": "處女座",
+        "lookup": [
+          "你有點孤僻，常常覺得別人不了解你，要多與別人互動才好。",
+          "你會很注重每個人的意見，與別人來往時也是非常誠懇的。",
+          "能力頗佳的你，適合擔任發言或主持的任務，會勝任愉快哦！",
+          "你是Virgo處女座中最為 ? t毛的，尤其容易劃地自限，要特別注意。",
+          "你是屬於比較外向的，容易交到許多朋友，但知心的並不多。",
+          "你是非常非常念舊的人哦！尤其是感情上，常常很難割捨。",
+          "你的個性比較剛直，不過在與人交往上還是要多體諒別人哦！",
+          "你是比較圓滑的人，很了解人際上的交流要如何互動。",
+          "對你投入的事情非常的狂熱，有時甚至因此而廢寢忘食。"
+        ]
+      },
+      "libra": {
+        "name": "天秤座",
+        "lookup": [
+          "你是秤子中比較獨立的，在決定事情時也比較不會猶豫不決。",
+          "在秤子中你是最需要別人陪伴的，如果沒有伴會感到不安。",
+          "你是秤子中最有才華的，在各項藝術領域都有不錯的天份。",
+          "你是秤子中最為重視實際層面的，也是比較有責任感的哦！",
+          "你是一隻喜愛交遊的Libra天秤，對感到好玩的事情都不會放過。",
+          "感情的順利與否對你來說非常重要哦！要小心的經營才好。",
+          "你是秤子中最喜歡思考的，對許多事都會找出合理的方法。",
+          "很重視生活的感覺，不能忍受太差的生活環境，有雅癖傾向。",
+          "你許多想法都有些不切實際，而且熱情常常無法持久哦！"
+        ]
+      },
+      "scorpio": {
+        "name": "天蠍座",
+        "lookup": [
+          "你很重視自己的目標，不太理睬身邊其他人在做些什麼。",
+          "你很在乎兩人關係上的忠誠，會全心全意的對待另一半。",
+          "對於溝通與人際關係是你的專長，總能夠得到大家幫助。",
+          "你是非常非常固執的，一旦你決定的事就難以改變。",
+          "你是蠍子中最開朗的，也是最容易與大家打成一片的。",
+          "你是個完美主義者，尤其是非常重視感情方面的經營。",
+          "你想的很多，常想到一些別人找不到的問題，非常聰明。",
+          "你很重視自己的地社會地位，認為應該得到的就會去爭取。",
+          "對於你喜歡或相信的事是非常狂熱的，但表面上看不出來。"
+        ]
+      },
+      "sagittarius": {
+        "name": "人馬座",
+        "lookup": [
+          "你常常我行我素，一有目標就會很快去執行，行動力很強。",
+          "喜歡與別人溝通相處的你，在人際上會得到大家的幫忙。",
+          "你是相當有才華的人哦！很能夠表現自己在藝術上的才華。",
+          "你是Sagittarius射手座中最重視生活規律的，而且也很有自己的想法。",
+          "哇！你真是超愛亂跑，一直待在同一個地方會讓你很難過。",
+          "你是很重視親情的人哦！在人際交流上也是很有一套的。",
+          "你真是想得太多，又有點固執的人，懷疑的心態很強哦！",
+          "你很重視自己的成就和外在的表現，喜歡富裕的生活環境。",
+          "你是很有理想的人，也是舉辦活動的高手，受到大家歡迎！"
+        ]
+      },
+      "capricorn": {
+        "name": "摩羯座",
+        "lookup": [
+          "你的自尊心很強哦！會默默的努力讓自己有所成就。",
+          "你覺得與人交遊是件重要的事，另外感情也是生活重心。",
+          "只要你多加努力就能展現出自己的才華，會很有成就哦！",
+          "你很重視腳踏實地的生活，會努力讓自己生活穩定下來。",
+          "你是Capricorn摩羯座中比較開朗的，對一些事比較不會那麼憂慮。",
+          "感情是你生活平穩的重點，希望經營有未來的感情生活。",
+          "你是一個非常聰明的人，但有時會因情緒化而下錯判斷。",
+          "對你來說功成名就吸引力大，會努力成為重要的人物。",
+          "你對自己想做的事非常投入，不過有時會忘了實際狀況。"
+        ]
+      }
+    };
+
+    function dateToHoroscopeName(dateString) {
+      var now = new Date(dateString),
+        y = now.getFullYear(),
+        m = now.getMonth() + 1,
+        d = now.getDate();
+
+      var md = (m * 100) + d
+
+      if (md >= 121 && md <= 219) {
+        return "aquarius";
+      } else if (md >= 220 && md <= 320) {
+        return "pisces";
+      } else if (md >= 321 && md <= 419) {
+        return "aries";
+      } else if (md >= 420 && md <= 520) {
+        return "taurus";
+      } else if (md >= 521 && md <= 621) {
+        return "gemini";
+      } else if (md >= 622 && md <= 722) {
+        return "cancer";
+      } else if (md >= 723 && md <= 822) {
+        return "leo";
+      } else if (md >= 823 && md <= 922) {
+        return "virgo";
+      } else if (md >= 923 && md <= 1023) {
+        return "libra";
+      } else if (md >= 1024 && md <= 1121) {
+        return "scorpio";
+      } else if (md >= 1122 && md <= 1220) {
+        return "sagittarius";
+      } else {
+        return "capricorn";
+      }
+    }
+
+    function getNumerologyIndex(dateString) {
+      var date = new Date(dateString),
+        y = date.getFullYear().toString(),
+        m = (date.getMonth() + 1).toString(),
+        d = date.getDate().toString();
+
+      var ymd = y + m + d;
+      // alert(ymd);
+      return getIndex(ymd);
+    }
+
+    function getIndex(source) {
+      var result = 0;
+
+      //把每個日期相加 算出生命靈數
+      for (var i = 0; i < source.length; i++) {
+        result = result + parseInt(source[i]);
+      }
+
+      //如果生命靈數大於9,重新呼叫getIndex函式,再相加一次
+      if (result > 9) {
+        result = getIndex(result.toString());
+      }
+      return result;
+    }
+
+    function doAnalysis() {
+      //取得輸入日期
+      var birthdate = document.getElementById("birthdate").value;
+
+      //生日轉換成星座名稱
+      var name = dateToHoroscopeName(birthdate); //傳回星座 英文名稱(放到 name)
+      var yourHoroscope = horoscopeData[name]; //取得星座 中文名稱(放到 yourHoroscope)
+
+      //取得生命靈數
+      var index = getNumerologyIndex(birthdate);
+
+      //產生清單內容
+      var listItem = document.createElement("li");
+      // alert(index); //(檢查index值用)
+      listItem.className = "list-group-item";
+      listItem.innerHTML = "<p><span class='label label-info'>" + birthdate + "</span> 出生的你，星座是 <em>" +
+        yourHoroscope.name + "</em></p>" +
+        "<p>你的生命靈數:<br>" + index + ". " +
+        yourHoroscope.lookup[index - 1] + "</p>";
+
+      // document.getElementById("results").appendChild(listItem); //未改善使用者體驗前
+
+      //改善使用者體驗後
+      var list = document.getElementById("results");
+      if (list.childNodes.length > 0) //如果有任何子節點存在
+      {
+        list.insertBefore(listItem, list.childNodes[0]);
+      } else {
+        list.appendChild(listItem);
+      }
+    }
+
+    document.getElementById("birthdate").onkeydown = function (event) {
+      if (event.keyCode == 13) {
+        doAnalysis();
+      }
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    計算結果為：
+    <div id="result"></div>
+    <button id="show" onclick="doCalculate();">顯示結果</button>
+
+    <script>
+        function doCalculate() {
+            var tempc = prompt("請輸入攝氏溫度：");
+            var tempf = (tempc * 1.8) + 32;
+            var text = "攝氏溫度為" + tempc + "度，轉為華氏" + tempf + "度";
+
+            var s = document.createElement("div");
+            s.innerHTML = text; //把字塞到標籤內
+
+            document.getElementById("result").appendChild(s);
+        }
+    </script>
+</body>
+
+</html>

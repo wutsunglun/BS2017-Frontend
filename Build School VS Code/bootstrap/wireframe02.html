@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./stylesheets/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container-fluid">
+
+        <div class="container">
+            <ol class="breadcrumb">
+                <li class="active">歡迎回來</li>
+                <li class="active">
+                    <script language="javascript">
+                        var Today = new Date();　
+                        document.write(Today.getDate() + " " + (Today.getMonth() + 1) + "," + Today.getFullYear() + " " +
+                            Today.getHours() + ":" + Today.getMinutes() + ":" + Today.getSeconds());
+                    </script>
+                </li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search for...">
+            <span class="input-group-btn">
+        <button class="btn btn-default" type="button">Go!</button>
+      </span>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

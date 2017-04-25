@@ -1,0 +1,8 @@
+D:\Build School VS2017\Csharp\Hackathons\Hackathon01\temperature\obj\Debug\Temperature.Form1.resources
+D:\Build School VS2017\Csharp\Hackathons\Hackathon01\temperature\obj\Debug\temperature.Properties.Resources.resources
+D:\Build School VS2017\Csharp\Hackathons\Hackathon01\temperature\obj\Debug\temperature.csproj.GenerateResource.Cache
+D:\Build School VS2017\Csharp\Hackathons\Hackathon01\temperature\bin\Debug\temperature.exe.config
+D:\Build School VS2017\Csharp\Hackathons\Hackathon01\temperature\bin\Debug\temperature.exe
+D:\Build School VS2017\Csharp\Hackathons\Hackathon01\temperature\bin\Debug\temperature.pdb
+D:\Build School VS2017\Csharp\Hackathons\Hackathon01\temperature\obj\Debug\temperature.exe
+D:\Build School VS2017\Csharp\Hackathons\Hackathon01\temperature\obj\Debug\temperature.pdb

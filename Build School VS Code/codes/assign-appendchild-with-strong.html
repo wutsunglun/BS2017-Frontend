@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        strong {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    計算結果為：
+    <div id="result"></div>
+
+    <script>
+        var tempc = prompt("請輸入攝氏溫度：");
+        var tempf = (tempc * 1.8) + 32;
+        var text = "攝氏溫度為" + tempc + "度，轉為華氏" + tempf + "度";
+
+        var strong = document.createElement("strong"); //產生無內容的strong標籤
+        strong.innerHTML = text; //把字塞到標籤內
+
+        document.getElementById("result").appendChild(strong); //把strong標籤和裡面的內容 丟入result的id區塊裡
+    </script>
+</body>
+
+</html>
