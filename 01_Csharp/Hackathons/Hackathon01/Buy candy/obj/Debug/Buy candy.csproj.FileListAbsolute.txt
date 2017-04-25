@@ -1,6 +1,0 @@
-D:\Build School VS2017\Csharp\Hackathons\Hackathon01\Buy candy\bin\Debug\Buy candy.exe.config
-D:\Build School VS2017\Csharp\Hackathons\Hackathon01\Buy candy\bin\Debug\Buy candy.exe
-D:\Build School VS2017\Csharp\Hackathons\Hackathon01\Buy candy\bin\Debug\Buy candy.pdb
-D:\Build School VS2017\Csharp\Hackathons\Hackathon01\Buy candy\obj\Debug\Buy candy.exe
-D:\Build School VS2017\Csharp\Hackathons\Hackathon01\Buy candy\obj\Debug\Buy candy.pdb
-D:\Build School VS2017\Csharp\Hackathons\Hackathon01\Buy candy\obj\Debug\Buy candy.csprojResolveAssemblyReference.cache

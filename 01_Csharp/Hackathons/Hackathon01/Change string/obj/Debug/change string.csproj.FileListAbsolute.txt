@@ -1,5 +1,0 @@
-D:\Build School VS2017\Csharp\Hackathons\Hackathon01\change string\bin\Debug\change string.exe.config
-D:\Build School VS2017\Csharp\Hackathons\Hackathon01\change string\bin\Debug\change string.exe
-D:\Build School VS2017\Csharp\Hackathons\Hackathon01\change string\bin\Debug\change string.pdb
-D:\Build School VS2017\Csharp\Hackathons\Hackathon01\change string\obj\Debug\change string.exe
-D:\Build School VS2017\Csharp\Hackathons\Hackathon01\change string\obj\Debug\change string.pdb
